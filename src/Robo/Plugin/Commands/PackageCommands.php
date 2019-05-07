@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace PhpTaskman\Package\Robo\Plugin\Commands;
 
 use PhpTaskman\Core\Robo\Plugin\Commands\AbstractCommands;
@@ -80,7 +78,7 @@ class PackageCommands extends AbstractCommands implements
         $composerConfig = Taskman::createJsonConfiguration([$composerFile]);
 
         $name = explode('/', $composerConfig->get('name'), 2)[1];
-        $version = $options['tag'] ?? $this->getVersionString();
+        $version = isset($options['tag']) ? $options['tag'] : $this->getVersionString();
         $archive = sprintf('%s-%s.tar.gz', $name, $version);
 
         $tasks = [
