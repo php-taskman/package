@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace PhpTaskman\Package\Traits;
 
 use PhpTaskman\Package\Services\Time;
@@ -12,12 +10,12 @@ use PhpTaskman\Package\Services\Time;
 trait TimeAwareTrait
 {
     /**
-     * @var \OpenEuropa\TaskRunner\Services\Time
+     * @var \PhpTaskman\Package\Services\Time
      */
     protected $time;
 
     /**
-     * @return \OpenEuropa\TaskRunner\Services\Time
+     * @return \PhpTaskman\Package\Services\Time
      */
     public function getTime()
     {
@@ -25,7 +23,7 @@ trait TimeAwareTrait
     }
 
     /**
-     * @param \OpenEuropa\TaskRunner\Services\Time $time
+     * @param \PhpTaskman\Package\Services\Time $time
      *
      * @return TimeAwareTrait
      */

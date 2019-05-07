@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace PhpTaskman\Package\Contract;
 
 use Gitonomy\Git\Repository;

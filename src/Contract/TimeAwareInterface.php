@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace PhpTaskman\Package\Contract;
 
 use PhpTaskman\Package\Services\Time;
@@ -17,7 +15,7 @@ interface TimeAwareInterface
     public function getTime();
 
     /**
-     * @param \OpenEuropa\TaskRunner\Services\Time $time
+     * @param \PhpTaskman\Package\Services\Time $time
      *
      * @return $this
      */
