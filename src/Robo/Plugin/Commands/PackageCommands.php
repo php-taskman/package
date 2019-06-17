@@ -111,12 +111,12 @@ class PackageCommands extends AbstractCommands implements
     /**
      * {@inheritdoc}
      */
-    public function getConfigurationFile()
+    public function getConfigurationFile(): string
     {
         return __DIR__ . '/../../../../config/commands/package.yml';
     }
 
-    public function getDefaultConfigurationFile()
+    public function getDefaultConfigurationFile(): string
     {
         return __DIR__ . '/../../../../config/default.yml';
     }

@@ -1,7 +1,8 @@
 {
     "name": "phptaskman/package",
     "type": "robo-tasks",
-    "description": "TODO",
+    "license": "MIT",
+    "description": "Generate a package from the source.",
     "authors": [
         {
             "name": "Pol Dellaiera",
@@ -9,6 +10,7 @@
         }
     ],
     "require": {
+        "php": ">= 7.1",
         "gitonomy/gitlib": "^1.0",
         "phptaskman/core": "^1"
     },
